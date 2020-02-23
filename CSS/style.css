@@ -53,7 +53,7 @@ padding: 5rem , 10rem;
 
 .warning{
     /*search about the -webkit-*/
-    background: -webkit-linear-gradient(45deg,  #EE7752 10%, #E73C7E 90%);
+    background: -webkit-linear-gradient(45deg,  #ffffff 10%, #23A6D5 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 400;
@@ -82,12 +82,22 @@ padding: 5rem , 10rem;
 button {
     border: 0;
     background: rgba(42,50,113, .28);
-    color: #6cacc5;
+    color: #ffffff;
     cursor: pointer;
     float: left;
     font: inherit;
     margin: 0.25em;
     width: 2em;
     height: 2em;
+
+    
+   
+}
+
+button:hover{
+    background:rgba(75, 90, 199, 0.28); 
+}
+button:focus{
+    outline: 0; /* Better check accessibility*/
 }
 
