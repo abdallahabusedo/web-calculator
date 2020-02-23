@@ -52,6 +52,7 @@ padding: 5rem , 10rem;
 }
 
 .warning{
+    /*search about the -webkit-*/
     background: -webkit-linear-gradient(45deg,  #EE7752 10%, #E73C7E 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,4 +60,34 @@ padding: 5rem , 10rem;
     margin: 0 auto 6em;
     max-width: 9em;
     font-size: 20px;
+}
+
+.calculator{
+    font-size: 28px;
+    margin: 0 auto;
+    width: 10em;
+}
+
+.viewer{
+    color:#ffffff;
+    float: left;
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 7.5em;
+    height: 3em;
+}
+
+button {
+    border: 0;
+    background: rgba(42,50,113, .28);
+    color: #6cacc5;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
 }
