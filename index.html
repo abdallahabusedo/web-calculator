@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link href="JS/main.js"> 
+    <title>calculator website</title>
+</head>
+<body>
+    <h1>JAVASCRIPT CALCULATOR</h1>
+    <p class="warning">Don't divide by zero</p>
+    <div class="calculator">
+        <button class="clear">C</button>
+        <div class="viewer">0</div>
+        <!--The data-* attributes is used to store custom data private to the page or application-->
+        <button class="number" data-number="7">7</button>
+        <button class="number" data-number="8">8</button>
+        <button class="number" data-number="9">9</button>
+        <button class="operation" data-operation="plus" >+</button>
+        <button class="number" data-number="4">4</button>
+        <button class="number" data-number="5">5</button>
+        <button class="number" data-number="6">6</button>
+        <button class="operation" data-operation="minus" >-</button>
+        <button class="number" data-number="1">1</button>
+        <button class="number" data-number="2">2</button>
+        <button class="number" data-number="3">3</button>
+        <button class="operation" data-operation="times" >*</button>
+        <button class="number" data-number="0">0</button>
+        <button class="number" data-number=".">.</button>
+        <button id="equals" class="equals" data-result="">=</button>
+        <button class="operation" data-operation="divided by">/</button>
+    </div>
+    <button id="reset" class="reset">Reset Universe?</button>
+</body>
+</html>

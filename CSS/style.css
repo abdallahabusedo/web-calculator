@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+    font-family:  "LATO" ,Arial, sans-serif;
+}
+
+body{
+    background-attachment: fixed;  /*The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.*/
+    margin: 0;  /*to spaces in the edges*/
+    padding: 5em 0 2em; 
+    text-align: center; 
+    width: 100%;/*to full all the screen */
+    height: 100vh; 
+    color: #fff; /*font color*/
+    /*1st the direction then enter the colors u want */
+    background: linear-gradient(-45deg , #EE7752 ,#E73C7E , #23A6D5 ,#23D5AE); 
+    background-size: 400% 400%; /*make it begger*/
+    position: relative;  
+    /*here u must make a @keyframes change to call it 
+    the 1st the time and the 2nd status 3rd how many times*/
+    animation: change 10s ease-in-out infinite;
+}
+
+h1{
+font-weight: 5rem;
+text-transform: uppercase;
+letter-spacing: 2px; /*the space between the letters*/
+border: 3px solid #fff;
+position: relative;
+left:50%;
+transform: translate(-50%, -50%);
+padding: 5rem , 10rem;
+}
+
+@keyframes change{
+    /*here it 0% do that etc....*/
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.warning{
+    background: -webkit-linear-gradient(45deg,  #EE7752 10%, #E73C7E 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    margin: 0 auto 6em;
+    max-width: 9em;
+    font-size: 20px;
+}
