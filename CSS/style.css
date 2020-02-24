@@ -79,7 +79,7 @@ padding: 5rem , 10rem;
     height: 3em;
 }
 
-button {
+.calc-button{
     border: 0;
     background: rgba(42,50,113, .28);
     color: #ffffff;
@@ -89,8 +89,6 @@ button {
     margin: 0.25em;
     width: 2em;
     height: 2em;
-
-    
    
 }
 
@@ -99,5 +97,16 @@ button:hover{
 }
 button:focus{
     outline: 0; /* Better check accessibility*/
+}
+.reset{
+    border: 0;
+    background: rgba(42,50,113, .28);
+    color: #ffffff;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em; 
 }
 
