@@ -15,6 +15,8 @@ const screen = document.querySelector(".viewer");
 
 function buttonClicked(value)
 {
+    console.log("buttonClicked");
+    
     /*isNaN Returns a Boolean value that indicates whether a value is the reserved value NaN (not a number). */ 
     /*parseInt Converts a string to an integer.*/
     if (isNaN(parseInt(value)))
@@ -125,10 +127,12 @@ function flushOperation(intBuffer)
   }
 
   function init() {
+      console.log("init");
+    
     document
-      .querySelector(".init();")
+      .querySelector(".calc-button")
       .addEventListener("click", function(event) {
-        buttonClick(event.target.innerText);
+        buttonClicked(event.target.innerText);
       });
   }
   
