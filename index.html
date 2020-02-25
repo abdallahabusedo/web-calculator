@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="js/main.js">
     <title>calculator website</title>
 </head>
 <body>
@@ -12,8 +11,9 @@
     <h1>JAVASCRIPT CALCULATOR</h1>
     <p class="warning">Don't divide by zero</p>
     <div class="calculator">
+        <div class="viewer">0</div>
+        <button class="calc-button" id="backspace">←</button>
         <button class="calc-button">C</button>
-        <div class="viewer" id="viewer" >0</div>
         <!--The data-* attributes is used to store custom data private to the page or application-->
         <button class="calc-button">7</button>
         <button class="calc-button">8</button>
@@ -22,17 +22,17 @@
         <button class="calc-button">4</button>
         <button class="calc-button">5</button>
         <button class="calc-button">6</button>
-        <button class="calc-button" >-</button>
+        <button class="calc-button">-</button>
         <button class="calc-button">1</button>
         <button class="calc-button">2</button>
         <button class="calc-button">3</button>
         <button class="calc-button">*</button>
         <button class="calc-button">0</button>
         <button class="calc-button">.</button>
-        <button id="equals" class="calc-button">=</button>
+        <button class="calc-button">=</button>
         <button class="calc-button">/</button>
     </div>
-<button id="reset" class="calc-button">Reset Universe?</button>
+        
 <script src="js/main.js"></script>
 </body>
 </html>

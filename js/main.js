@@ -38,7 +38,7 @@ function handleNumber(value)
     }
     else 
     {
-        buffer+=value
+        buffer+=value;
     }
 }
 
@@ -130,7 +130,7 @@ function flushOperation(intBuffer)
       console.log("init");
     
     document
-      .querySelector(".calc-button")
+      .querySelector(".calculator")
       .addEventListener("click", function(event) {
         buttonClicked(event.target.innerText);
       });

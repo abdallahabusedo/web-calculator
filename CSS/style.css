@@ -20,7 +20,7 @@ body{
     color: #fff; /*font color*/
     /*1st the direction then enter the colors u want */
     background: linear-gradient(-45deg , #EE7752 ,#E73C7E , #23A6D5 ,#23D5AE); 
-    background-size: 400% 400%; /*make it begger*/
+    background-size: 400% 400%;/*make it begger*/
     position: relative;  
     /*here u must make a @keyframes change to call it 
     the 1st the time and the 2nd status 3rd how many times*/
@@ -98,15 +98,8 @@ button:hover{
 button:focus{
     outline: 0; /* Better check accessibility*/
 }
-.reset{
-    border: 0;
-    background: rgba(42,50,113, .28);
-    color: #ffffff;
-    cursor: pointer;
-    float: left;
-    font: inherit;
-    margin: 0.25em;
-    width: 2em;
-    height: 2em; 
+
+#backspace{
+
 }
 
