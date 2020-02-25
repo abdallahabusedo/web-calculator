@@ -10,8 +10,8 @@ function buttonClicked(value)
     console.log("buttonClicked");
     
     /*isNaN Returns a Boolean value that indicates whether a value is the reserved value NaN (not a number). */ 
-    /*parseInt Converts a string to an integer.*/
-    if (isNaN(parseInt(value)))
+    /*parseFloat Converts a string to an integer.*/
+    if (isNaN(parseFloat(value)))
     {
         handleSymbol(value);
     }
@@ -41,7 +41,7 @@ function handleMath(value)
       // do nothing
       return;
     }
-    const intBuffer = parseInt(buffer);
+    const intBuffer = parseFloat(buffer);
     if (result === 0) 
     {
         result = intBuffer;
@@ -90,7 +90,7 @@ function flushOperation(intBuffer)
             // need two numbers to do math
             return;
             }
-            flushOperation(parseInt(buffer));
+            flushOperation(parseFloat(buffer));
             previousOperator = null;
             buffer = result;
             result = 0;
