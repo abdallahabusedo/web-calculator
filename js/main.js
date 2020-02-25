@@ -116,7 +116,7 @@ function flushOperation(intBuffer)
         case "+":
         case "-":
         case "×":
-        case "÷":
+        case "/":
             handleMath(value);
             break;
         }
