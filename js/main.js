@@ -1,17 +1,9 @@
-let displayNumber =0;
-let firstNumber =0;
-let secondNumber =0;
 let result =0;
 let previousOperator;
 let buffer ="0";
 const screen = document.querySelector(".viewer");
 
 
-
-/*function display_Number(element)
-{
-    document.getElementById("viewer").innerHTML = displayNumber;
-}*/
 
 function buttonClicked(value)
 {
@@ -74,7 +66,7 @@ function flushOperation(intBuffer)
     {
       result -= intBuffer;
     } 
-    else if (previousOperator === "×") 
+    else if (previousOperator === "*") 
     {
       result *= intBuffer;
     }
@@ -119,6 +111,17 @@ function flushOperation(intBuffer)
         case "/":
             handleMath(value);
             break;
+        case ".":
+          if ( buffer.length == 0)     //no leading ".", use "0."
+            { 
+              buffer="0.";
+            } 
+            else
+            {  
+              buffer+=".";
+            }
+            break;
+            
         }
   }
 
